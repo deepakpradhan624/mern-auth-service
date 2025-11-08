@@ -1,28 +1,36 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "format:check": "prettier . --check",
-    "format:write": "prettier . --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deepakpradhan624/mern-auth-service.git"
-  },
-  "author": "Deepak Pradhan (pradhand92041@gmail.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deepakpradhan624/mern-auth-service/issues"
-  },
-  "homepage": "https://github.com/deepakpradhan624/mern-auth-service#readme",
-  "dependencies": {
-    "nodemon": "^3.1.10"
-  },
-  "devDependencies": {
-    "prettier": "3.6.2",
-    "typescript": "^5.9.3"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "format:check": "prettier . --check",
+        "format:write": "prettier . --write",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/deepakpradhan624/mern-auth-service.git"
+    },
+    "author": "Deepak Pradhan (pradhand92041@gmail.com)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/deepakpradhan624/mern-auth-service/issues"
+    },
+    "homepage": "https://github.com/deepakpradhan624/mern-auth-service#readme",
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "nodemon": "^3.1.10"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.38.0",
+        "eslint": "^9.38.0",
+        "eslint-config-prettier": "^10.1.8",
+        "husky": "^9.1.7",
+        "prettier": "3.6.2",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.46.2"
+    }
 }

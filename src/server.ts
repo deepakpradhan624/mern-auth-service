@@ -1,7 +1,7 @@
 function login(username: string): boolean | undefined {
-  if (username === "admin") {
-    return true;
-  }
+    if (username === 'admin') {
+        return true;
+    }
 }
 
-login("admin");
+login('admin');
