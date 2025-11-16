@@ -10,7 +10,7 @@ const startServer = () => {
         });
     } catch (error) {
         if (error instanceof Error) {
-            logger.error('Error starting server:', error);
+            logger.error('Error starting server:', error.message);
 
             setTimeout(() => {
                 process.exit(1);

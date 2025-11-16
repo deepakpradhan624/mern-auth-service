@@ -8,7 +8,8 @@
         "dev": "nodemon src/server.ts",
         "format:check": "prettier . --check",
         "format:write": "prettier . --write",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "test": "jest"
     },
     "repository": {
         "type": "git",
@@ -21,19 +22,25 @@
     },
     "homepage": "https://github.com/deepakpradhan624/mern-auth-service#readme",
     "dependencies": {
+        "@types/http-errors": "^2.0.5",
         "dotenv": "^17.2.3",
         "express": "^5.1.0",
+        "http-errors": "^2.0.0",
         "nodemon": "^3.1.10",
         "winston": "^3.18.3"
     },
     "devDependencies": {
         "@eslint/js": "^9.38.0",
         "@types/express": "^5.0.5",
+        "@types/supertest": "^6.0.3",
         "@types/winston": "^2.4.4",
         "eslint": "^9.38.0",
         "eslint-config-prettier": "^10.1.8",
         "husky": "^9.1.7",
+        "jest": "^30.2.0",
         "prettier": "3.6.2",
+        "supertest": "^7.1.4",
+        "ts-jest": "^29.4.5",
         "ts-node": "^10.9.2",
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.46.2"
